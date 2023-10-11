@@ -1,0 +1,89 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+NKo+Unjoined:wght@700&family=Russo+One&display=swap');
+
+
+body {
+    font-family: 'Noto Sans NKo Unjoined', sans-serif;
+    width: 100vw;
+    height: 100vh;
+    padding: 0;
+    margin: 0;
+    overflow-x: hidden;
+
+    background-image: url(asset/bag1.jpg);
+    background-color: darkgray;
+    background-size: cover;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-position: center;
+
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.container {
+    width: 91%;
+    max-width: 680px;
+    margin: 10px;
+    padding: 50px 0px 100px 0px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.img-Container img{
+    width: 150px;
+    border-radius: 75%;
+}
+
+.title-Container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 40px;
+
+    color: rgb(0, 0, 0);
+}
+
+.link-item {
+   position: relative;
+   width: 900px;
+   padding: 1px 0;
+   text-align: center;
+   margin: 20px 10px;
+   font-weight: bold;
+   border: 2px solid rgb(105,105,105);
+   background: transparent;
+   color: rgb(0, 0, 0);
+   cursor: pointer;
+   overflow: hidden;
+   text-transform: uppercase;
+   display: flex;
+   justify-content: space-between;
+   text-decoration: none;
+}
+
+span{
+background: rgb(105,105,105);
+height: 100%;
+width: 0;
+position: absolute;
+left: 0;
+bottom: 0;
+z-index: -1;
+transition: .9s;
+}
+
+.link-item:hover span{
+    width: 100%;
+}
+
+.link-item:hover {
+    color: white !important;
+}
+
+.icon{
+    margin: 3px 8px;
+    width: 44px;
+    height: 44px;
+}
